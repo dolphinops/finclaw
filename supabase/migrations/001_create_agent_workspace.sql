@@ -55,7 +55,9 @@ INSERT INTO public.agent_workspace_files (name, content) VALUES
     ('IDENTITY.md', '# Agent Identity\n\nDefine who your agent is here.\n'),
     ('SOUL.md', '# Soul / Core Directives\n\nDefine your agent''s personality and values.\n'),
     ('TOOLS.md', '# Tools Reference\n\nDocument your custom tools here.\n'),
-    ('USER.md', '# User Preferences\n\nStore user-facing preferences here.\n');
+    ('USER.md', '# User Preferences\n\nStore user-facing preferences here.\n'),
+    ('HEARTBEAT.md', '# Heartbeat\n\nAutomated systemic instructions or recurring background tasks go here.\n'),
+    ('MEMORY.md', '# Agent Memory\n\nLong-term global memory scratchpad. Store important facts here that shouldn''t be lost between sessions.\n');
 
 -- Seed default settings
 INSERT INTO public.agent_settings (default_model, enabled_skills)
